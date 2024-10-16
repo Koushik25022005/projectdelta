@@ -1,5 +1,8 @@
+
 "use client";
 import { Card } from '@/components/ui/card';
+
+
 import { UserButton } from '@clerk/nextjs'
 import { MessageSquare } from 'lucide-react'
 import React from 'react'
@@ -20,7 +23,11 @@ const DashboardPage = () => {
   return (
     <div>
       <div className="mb-8 space-y-4">
+
       <h2 className="text-2xl md:text 4-xl font-bold text-center">
+
+      <h2 className="text-2xl md:text 4-xl font-bold">
+
         Explore the Power of AI
       </h2>
       <p className="text-muted-foreground font-light text-sm
@@ -43,7 +50,7 @@ const DashboardPage = () => {
         ))}
       </div>
       </div>
-      <UserButton afterSignOutUrl='/'/>
+     
     </div>
   )
 }
