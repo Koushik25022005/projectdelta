@@ -1,11 +1,13 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
-const page = () => {
+const DashboardPage = () => {
   return (
     <div>
-      Dashboard Page
+      <p>Dash Board page</p>
+      <UserButton afterSignOutUrl='/'/>
     </div>
   )
 }
 
-export default page
+export default DashboardPage
