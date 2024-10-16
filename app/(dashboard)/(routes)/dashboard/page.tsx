@@ -6,7 +6,7 @@ const DashboardPage = () => {
     <div>
       <div className="mb-8 space-y-4">
       <h2 className="text-2xl md:text 4-xl font-bold">
-        Eplore the Power of AI
+        Explore the Power of AI
       </h2>
       <p className="text-muted-foreground font-light text-sm
       md:text-lg text-center">
