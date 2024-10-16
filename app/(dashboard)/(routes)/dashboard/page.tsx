@@ -1,5 +1,6 @@
 "use client";
 import { Card } from '@/components/ui/card';
+import {cn} from '@/lib/utils';
 import { UserButton } from '@clerk/nextjs'
 import { MessageSquare } from 'lucide-react'
 import React from 'react'
@@ -35,7 +36,7 @@ const DashboardPage = () => {
           justify-between hover:shadow-md transition 
           cursor-pointer">
           <div className="flex items-center gap-x-4">
-            <div className="">
+            <div className={cn("p-2 w-fit")}>
 
             </div>
           </div>
