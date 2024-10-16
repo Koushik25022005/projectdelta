@@ -19,7 +19,6 @@ export const Heading = ({
     bgColor
 }: HeadingProps) => {
     return (
-        <>
         <div className="px-4 lg:px-8 items-center gap-x-3 md-8">
             <div className={cn("p-2 w-fit rounded-md", bgColor)}>
             <Icon className={cn("w-10 h-10", iconColor)}/>
@@ -29,12 +28,10 @@ export const Heading = ({
             <h2 className="text-3xl font-bold ">
             {title}
             </h2>
-            <p>
+            <p className="text-sm text-muted-foreground">
                 {description}
             </p>  
             </div>
         </div>
-        
-        </>
     );
 };
