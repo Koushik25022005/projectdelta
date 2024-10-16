@@ -3,6 +3,7 @@
 import * as z from "zod";
 import {formSchema} from "./constant";
 import {Heading} from "@/components/heading";
+import {Form, FormField, FormItem} from "@/components/ui/form";
 
 
 import { MessageSquare } from "lucide-react";
@@ -35,7 +36,24 @@ const ConversationPage = () => {
             
          />  
          <div className="px-4 lg:px-8">
+            <div>
+            <Form {...form}>
+            <form
+            onSumbit = {form.handleSubmit(onSubmit)}
+            className= "rounded-lg border w-full p-4 px-3 md:px-6 focus-whitin:shadow-sm grid grid-cols-12 gap-2"
+            >
+                <FormField 
+                name="prompt"
+                render={({field}) => (
+                    <FormItem className="cols-span-12 lg:col-span-10">
 
+                    </FormItem>
+
+                )}
+                />
+            </form>
+            </Form>
+            </div>
         </div> 
         </div>
     );
